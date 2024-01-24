@@ -5,6 +5,7 @@
 import NavBar from "./components/NavBar/navbar"
 import About from "./pages/About/about"
 import Projects from "./pages/Projects/projects"
+import Skills from "./pages/Skills/skills"
 
 import './App.scss'
 
@@ -17,6 +18,7 @@ function App() {
       <NavBar />
       <About />
       <Projects />
+      <Skills />
     </div>
   )
 }

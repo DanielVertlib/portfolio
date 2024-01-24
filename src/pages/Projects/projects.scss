@@ -1,7 +1,64 @@
+@import '../../colors.scss';
+
 .projects {
   margin-top: 5em;
 
   .projects-title {
     text-align: center;
+  }
+}
+
+.projects-grid {
+  margin-top: 3em;
+}
+
+.project-card {
+  margin: 3em;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px #ccc;
+  }
+
+  .project-card-content {
+    text-align: center;
+    margin-top: 1em;
+  }
+  .project-card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .project-card-description {
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .project-card-links {
+    margin-top: 1em;
+    text-align: center;
+
+    a {
+      margin: 0 0.5em;
+    }
+  }
+
+  .project-card-tech {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .project-tech-item {
+      margin: 0.5em;
+      font-weight: 500;
+      font-size: .8rem;
+      color: $clr-fg-alt;
+    }
   }
 }
