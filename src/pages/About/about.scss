@@ -1,0 +1,56 @@
+@import '../../colors.scss';
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3em;
+
+  .about-contact {
+    margin-top: 2em;
+    display: flex;
+
+    .link {
+      color: $clr-primary;
+      padding: 0 0 0.3em 0;
+      position: relative;
+
+      &:hover {
+        color: $clr-primary;
+      }
+
+      &:before {
+        content: '';
+        display: inline;
+        width: 0%;
+        height: 0.2em;
+        position: absolute;
+        bottom: 0;
+        background-color: $clr-primary;
+        transition: width 0.2s ease-in;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
+
+    .link-icon {
+      margin-right: 0.8em;
+    }
+  }
+
+  .about-role-text {
+    margin-top: 1em;
+  }
+
+  .about-name-text {
+    color: $clr-primary;
+  }
+
+  .about-content-text {
+    margin-top: 1.5em;
+    max-width: 600px;
+    text-align: center;
+  }
+}

@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useContext } from "react"
+
+// import { ThemeContext } from "./contexts/theme"
+
+import NavBar from "./components/NavBar/navbar"
+import About from "./pages/About/about"
+import Projects from "./pages/Projects/projects"
+
+import './App.scss'
 
 function App() {
+  // const [{ theme }] = useContext(ThemeContext)
+  const theme = 'dark'
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${theme} app`}>
+      <NavBar />
+      <About />
+      <Projects />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,26 @@
+.navbar {
+  height: 8em;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  .navbar-menu-item {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+  
+    &:hover {
+      color: #ff6b6b;
+      border-bottom: 1px solid #ff6b6b;
+    }
+  }
+}
