@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/navbar"
 import About from "./pages/About/about"
 import Projects from "./pages/Projects/projects"
 import Skills from "./pages/Skills/skills"
+import Contact from "./pages/Contact/contact"
 
 import './App.scss'
 
@@ -17,8 +18,9 @@ function App() {
     <div className={`${theme} app`}>
       <NavBar />
       <About />
-      <Projects />
       <Skills />
+      <Projects />
+      <Contact />
     </div>
   )
 }

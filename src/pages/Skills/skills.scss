@@ -15,11 +15,20 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    .skills-list-item {
+    .skills-item {
       margin: 0.5em;
       font-weight: 500;
       font-size: .8rem;
       color: $clr-fg-alt;
+      display: block;
+      cursor: pointer;
+      padding: 0.8em 1.4em;
+      font-weight: 500;
+      font-size: .9rem;
+      text-transform: none;
+      background-color: $clr-bg-alt;
+      box-shadow: 0 3px 3px 0 rgba(0,0,0,.15);
+      border: 0;
     }
   }
 }
