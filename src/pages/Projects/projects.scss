@@ -10,37 +10,53 @@
 
 .projects-grid {
   margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-content {
+  margin-top: 1em;
+  margin-left: 1.5em;
 }
 
 .project-card {
-  margin: 3em;
+  margin: 3em auto;
   padding: 2em;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px #ccc;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+
+  .project-card-img {
+    margin-top: 1em;
+
+    img {
+      display: block;
+      max-width: 174px;
+      max-height: 126px;
+      width: auto;
+      height: auto;
+    }
+  }
 
   &:hover {
     box-shadow: 0 0 10px #ccc;
   }
-
-  .project-card-content {
-    text-align: center;
-    margin-top: 1em;
-  }
   .project-card-title {
     font-size: 1.5em;
     font-weight: bold;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
   }
 
   .project-card-description {
     margin-top: 1em;
-    text-align: center;
   }
 
   .project-card-links {
-    margin-top: 1em;
     text-align: center;
 
     a {

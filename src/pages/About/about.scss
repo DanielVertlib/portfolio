@@ -10,6 +10,45 @@
     margin-top: 2em;
     display: flex;
 
+    .resume-button {
+      display: block;
+      cursor: pointer;
+      padding: 0.8em 1.4em;
+      font-weight: 500;
+      font-size: .9rem;
+      text-transform: lowercase;
+      transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+      color: $clr-primary;
+      border: 2px solid $clr-primary;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+
+      &:hover {
+        color: $clr-bg;
+
+        &:before {
+          right: 0;
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        background-color: $clr-primary;
+        right: 100%;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: right .2s ease-in-out;
+      }
+
+      .resume-button-text {
+        text-align: center;
+      }
+    }
+
     .link {
       color: $clr-primary;
       padding: 0 0 0.3em 0;
@@ -36,7 +75,7 @@
     }
 
     .link-icon {
-      margin-right: 0.8em;
+      margin: auto 0 auto 1em;
     }
   }
 
