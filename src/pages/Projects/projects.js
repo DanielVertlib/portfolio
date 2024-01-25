@@ -8,10 +8,11 @@ import './projects.scss'
 // todo: move projects cards to a separate file
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    stack: ['React', 'Node.js', 'MongoDB'],
-    projectLink: 'https://google.com'
+    title: 'Spotifyist',
+    description: 'Leveraging the Spotify Web API, spotifyist allows users to explore their top artists and songs as well as their recently played songs.'
+    + 'Users can also create playlists and add songs to their existing playlists.',
+    stack: ['React', 'Redux', 'TypeScript', 'SCSS', 'HTML5'],
+    projectLink: 'https://spotifyist.netlify.app/'
   },
   {
     title: 'Project 2',
