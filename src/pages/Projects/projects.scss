@@ -9,7 +9,7 @@
 }
 
 .projects-grid {
-  margin-top: 3em;
+  margin: 0 1em;
   display: flex;
   flex-direction: column;
 }
@@ -17,6 +17,12 @@
 .project-card-content {
   margin-top: 1em;
   margin-left: 1.5em;
+}
+
+@media (max-width: 900px) {
+  .project-card-img {
+    display: none;
+  }
 }
 
 .project-card {
@@ -49,7 +55,6 @@
     font-size: 1.5em;
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
   }
 
   .project-card-description {
@@ -58,9 +63,11 @@
 
   .project-card-links {
     text-align: center;
+    display: flex;
 
     a {
-      margin: 0 0.5em;
+      display: flex;
+      margin-left: 0.5em;
     }
   }
 

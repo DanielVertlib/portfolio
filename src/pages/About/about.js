@@ -20,12 +20,12 @@ const About = () => {
       </h1>
       <h2 className="about-role-text">A Frontend Developer.</h2>
       <span className="about-content-text">
-        I am a Frontend Developer with a passion for creating beautiful, responsive, and functional web applications.
-        I love learning new tech and best practices while employing it in my work
-      </span>
-      <span className="about-content-text">
         I have 5+ years of professional work experience building SaaS CMS platforms.
         I am currently working on personal projects to further my skills and knowledge.
+      </span>
+      <span className="about-content-text">
+        I am a Frontend Developer with a passion for creating beautiful, responsive, and functional web applications.
+        I love learning new tech and best practices while employing it in my work
       </span>
       <span className="about-content-text">
         Check out some of my projects below!

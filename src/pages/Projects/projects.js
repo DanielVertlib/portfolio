@@ -19,7 +19,7 @@ const projects = [
     img: spotifyist
   },
   {
-    title: 'Portfolio Website',
+    title: 'Portfolio',
     description: 'Portfolio Site built with React and SCSS.',
     stack: ['React', 'SCSS', 'Javascript', 'HTML5', 'Material-UI'],
     projectLink: 'https://google.com',
