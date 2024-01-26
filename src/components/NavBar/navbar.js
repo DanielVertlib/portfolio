@@ -16,8 +16,8 @@ const NavBar = () => {
     <div className="navbar">
       {/* <img src={logo} alt="Logo" className="logo" /> */}
       <div className="navbar-menu">
-        <Link {...linkProps} to="skills">skills</Link>
         <Link {...linkProps} to="projects">projects</Link>
+        <Link {...linkProps} to="skills">skills</Link>
         <Link {...linkProps} to="contact">contact</Link>
       </div>
     </div>

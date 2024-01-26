@@ -18,8 +18,8 @@ function App() {
     <div className={`${theme} app`}>
       <NavBar />
       <About />
-      <Skills />
       <Projects />
+      <Skills />
       <Contact />
     </div>
   )
