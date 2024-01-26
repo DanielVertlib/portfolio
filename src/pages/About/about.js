@@ -20,7 +20,9 @@ const About = () => {
       </h1>
       <h2 className="about-role-text">A Frontend Developer.</h2>
       <span className="about-content-text">
-        I have 5+ years of professional work experience building SaaS CMS platforms.
+        I have
+        <span className="about-content-text-bold"> 5+ years </span>
+        of professional work experience building SaaS CMS platforms.
         I am currently working on personal projects to further my skills and knowledge.
       </span>
       <span className="about-content-text">
