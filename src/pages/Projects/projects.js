@@ -20,13 +20,17 @@ const ProjectCard = ({ title, description, stack, github, app, img }) => {
             <a
               href={github}
               aria-label='github'
-              className='link link-icon' >
+              className='link link-icon'
+              target="_blank"
+              rel="noreferrer" >
               <GitHubIcon />
             </a>
             <a
               href={app}
               aria-label='launch'
-              className='link link-icon' >
+              className='link link-icon'
+              target="_blank"
+              rel="noreferrer" >
               <LaunchIcon />
             </a>
           </div>

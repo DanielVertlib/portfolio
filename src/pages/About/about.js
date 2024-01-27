@@ -37,13 +37,17 @@ const About = () => {
         <a
           href={constants.links.github}
           aria-label='github'
-          className='link link-icon' >
+          className='link link-icon'
+          target="_blank"
+          rel="noreferrer" >
           <GitHubIcon fontSize="large" />
         </a>
         <a
           href={constants.links.linkedIn}
           aria-label='linkedIn'
-          className='link link-icon' >
+          className='link link-icon'
+          target="_blank"
+          rel="noreferrer" >
           <LinkedInIcon fontSize="large" />
         </a>
       </div>
