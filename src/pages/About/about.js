@@ -2,14 +2,17 @@ import React from "react"
 
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import pdf from '../../assets/resume.pdf'
+import pdf from 'assets/resume.pdf'
+
+// import constants from 'constants'
 
 import './about.scss'
 
-// todo: move social const to a separate file
-const social = {
-  github: 'https://github.com/DanielVertlib',
-  linkedIn: 'https://www.linkedin.com/in/daniel-vertlib-0b1b1a1b0/'
+const constants = {
+  links: {
+    github: 'https://github.com/DanielVertlib',
+    linkedIn: 'https://www.linkedin.com/in/daniel-vertlib-87962a111/'
+  }
 }
 
 const About = () => {
@@ -39,13 +42,13 @@ const About = () => {
           </span>
         </a>
         <a
-          href={social.github}
+          href={constants.links.github}
           aria-label='github'
           className='link link-icon' >
           <GitHubIcon fontSize="large" />
         </a>
         <a
-          href={social.linkedIn}
+          href={constants.links.linkedIn}
           aria-label='linkedIn'
           className='link link-icon' >
           <LinkedInIcon fontSize="large" />

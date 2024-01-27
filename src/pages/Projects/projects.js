@@ -3,36 +3,39 @@ import React from 'react'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LaunchIcon from '@material-ui/icons/Launch'
 
-import spotifyist from '../../assets/spotifyist.png'
-import portfolio from '../../assets/portfolio.png'
+import spotifyist from 'assets/spotifyist.png'
+import portfolio from 'assets/portfolio.png'
 
+// import constants from '../../constants'
 import './projects.scss'
 
-// todo: move projects cards to a separate file
-const projects = [
-  {
-    title: 'Spotifyist',
-    description: 'Spotifyist allows users to explore their top artists and songs as well as their recently played songs.'
-    + ' Leveraging the Spotify Web API, users can also create spotify playlists from the user specific top charts.',
-    stack: ['React', 'Redux', 'TypeScript', 'SCSS', 'HTML5'],
-    projectLink: 'https://spotifyist.netlify.app/',
-    img: spotifyist
+const constants = {
+  links: {
+    github: 'https://github.com/DanielVertlib',
+    linkedIn: 'https://www.linkedin.com/in/daniel-vertlib-87962a111/'
   },
-  {
-    title: 'Portfolio',
-    description: 'Portfolio Site built with React and SCSS.',
-    stack: ['React', 'SCSS', 'Javascript', 'HTML5', 'Material-UI'],
-    projectLink: 'https://google.com',
-    img: portfolio
-  }
-]
-
-// todo: move social const to a separate file
-const social = {
-  github: 'https://github.com/DanielVertlib'
+  projects: [
+    {
+      title: 'Spotifyist',
+      description: 'Spotifyist allows users to explore their top artists and songs as well as their recently played songs.'
+      + ' Leveraging the Spotify Web API, users can also create spotify playlists from the user specific top charts.',
+      stack: ['React', 'Redux', 'TypeScript', 'SCSS', 'HTML5'],
+      github: 'https://github.com/DanielVertlib/spotify-history',
+      app: 'https://spotifyist.netlify.app/',
+      img: spotifyist
+    },
+    {
+      title: 'Portfolio',
+      description: 'Portfolio Site built with React and SCSS.',
+      stack: ['React', 'SCSS', 'Javascript', 'HTML5', 'Material-UI'],
+      github: 'https://github.com/DanielVertlib/portfolio',
+      app: 'https://danielvertlib.github.io/portfolio/',
+      img: portfolio
+    }
+  ]
 }
 
-const ProjectCard = ({ title, description, stack, projectLink, img }) => {
+const ProjectCard = ({ title, description, stack, github, app, img }) => {
   return (
     <div className="project-card">
       <div className="project-card-img">
@@ -43,13 +46,13 @@ const ProjectCard = ({ title, description, stack, projectLink, img }) => {
           <h3>{title}</h3>
           <div className="project-card-links">
             <a
-              href={social.github}
+              href={github}
               aria-label='github'
               className='link link-icon' >
               <GitHubIcon />
             </a>
             <a
-              href={projectLink}
+              href={app}
               aria-label='launch'
               className='link link-icon' >
               <LaunchIcon />
@@ -59,7 +62,6 @@ const ProjectCard = ({ title, description, stack, projectLink, img }) => {
         <div className="project-card-description">
           <p>{description}</p>
         </div>
-        {/* <div className="project-card-tech"> */}
           <ul className="project-card-tech">
             {stack.map((item, index) =>
               <li className="project-tech-item" key={index}>
@@ -67,7 +69,6 @@ const ProjectCard = ({ title, description, stack, projectLink, img }) => {
               </li>)
             }
           </ul>
-        {/* </div> */}
       </div>
     </div>
   )
@@ -78,7 +79,7 @@ const Projects = () => {
     <div className="projects">
       <h2 className="projects-title">Projects</h2>
       <div className="projects-grid">
-        {projects.map((project, index) => <ProjectCard key={index} {...project} />)}
+        {constants.projects.map((project, index) => <ProjectCard key={index} {...project} />)}
       </div>
     </div>
   )
