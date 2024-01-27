@@ -4,16 +4,9 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import pdf from 'assets/resume.pdf'
 
-// import constants from 'constants'
+import constants from 'constants'
 
 import './about.scss'
-
-const constants = {
-  links: {
-    github: 'https://github.com/DanielVertlib',
-    linkedIn: 'https://www.linkedin.com/in/daniel-vertlib-87962a111/'
-  }
-}
 
 const About = () => {
   return (

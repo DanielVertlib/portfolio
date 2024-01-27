@@ -14,7 +14,6 @@ const NavBar = () => {
 
   return (
     <div className="navbar">
-      {/* <img src={logo} alt="Logo" className="logo" /> */}
       <div className="navbar-menu">
         <Link {...linkProps} to="projects">projects</Link>
         <Link {...linkProps} to="skills">skills</Link>

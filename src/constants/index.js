@@ -24,6 +24,33 @@ const constants = {
       app: 'https://danielvertlib.github.io/portfolio/',
       img: portfolio
     }
+  ],
+  skills: [
+    'React',
+    'JavaScript',
+    'TypeScript',
+    'HTML5',
+    'SCSS',
+    'Redux',
+    'React-Router',
+    'Formik',
+    'Openlayers',
+    'Jest',
+    'Enzyme',
+    'React Testing Library',
+    'Karma',
+    'Mocha',
+    'Chai',
+    'Sinon',
+    'PhantomJS',
+    'Webpack',
+    'Babel',
+    'npm',
+    'Gulp',
+    'Node.js',
+    'Material-UI',
+    'CI/CD',
+    'Git'
   ]
 }
 
